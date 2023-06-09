@@ -1,0 +1,12 @@
+<% erb :'layout', layout: true do %>
+<!-- views/students/index.erb -->
+
+<h1>All Students</h1>
+
+<ul>
+  <% @students.each do |student| %>
+    <li><%= student.name %></li>
+  <% end %>
+</ul>
+
+

@@ -1,0 +1,15 @@
+<% erb :'layout', layout: true do %>
+  <h1>Grade Details</h1>
+
+  <p>Score: <%= @grade.score %></p>
+  <p>Grade: <%= @grade.grade %></p>
+  <p>Assignment: <%= @grade.assignment.title %></p>
+  <p>Student: <%= @grade.student.name %></p>
+  <p>Assignment Description: <%= @grade.assignment.description %></p>
+  <p>Due Date: <%= @grade.assignment.due_date %></p>
+  <p>Teacher: <%= @grade.assignment.teacher.name %></p>
+  <p>Submitted: <%= @grade.submitted_at %></p>
+  <p>Comments: <%= @grade.comments %></p>
+ 
+  
+  

@@ -1,0 +1,10 @@
+<% erb :'layout', layout: true do %>
+  
+    <h1>Delete Classroom</h1>
+
+    <p>Are you sure you want to delete the classroom "<%= @classroom.name %>"?</p>
+    <form action="/classrooms/<%= @classroom.id %>" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <button type="submit">Confirm Delete</button>
+    </form>
+    

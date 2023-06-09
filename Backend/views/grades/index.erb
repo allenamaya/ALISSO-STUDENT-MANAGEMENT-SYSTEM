@@ -1,0 +1,8 @@
+<% erb :'layout', layout: true do %>
+    <h1>All Grades</h1>
+
+    <ul>
+      <% @grades.each do |grade| %>
+        <li><%= grade.score %></li>
+      <% end %>
+    </ul>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teacher Management System</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <!-- Teacher-specific header content -->
+    <h1>Teacher Management System</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/teacher/login">Login</a></li>
+        <li><a href="/teacher/signup">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <%= yield %>
+  </main>
+
+  <footer>
+    &copy; <%= Time.now.year %> Alisso Management System
+  </footer>
+</body>
+</html>

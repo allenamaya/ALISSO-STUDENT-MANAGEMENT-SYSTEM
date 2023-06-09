@@ -1,0 +1,24 @@
+<% erb :'layout', layout: true do %>
+    <h1>New Classroom</h1>
+
+<form action="/classrooms" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+
+  <label for="grade_level">Grade Level:</label>
+  <input type="text" id="grade_level" name="grade_level">
+
+  <label for="teacher_id">Teacher:</label>
+  <select id="teacher_id" name="teacher_id">
+    <% @teachers.each do |teacher| %>
+      <option value="<%= teacher.id %>"><%= teacher.name %></option>
+    <% end %>
+  </select>
+
+  <!-- Add more input fields for other classroom details -->
+  
+  <button type="submit">Create</button>
+</form>
+
+
+

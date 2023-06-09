@@ -1,0 +1,12 @@
+<% erb :'layout', layout: true do %>
+    <h1>Edit Attendance</h1>
+
+    <form action="/attendances/<%= @attendance.id %>" method="post">
+      <input type="hidden" name="_method" value="put">
+      <label for="status">Status:</label>
+      <input type="text" id="status" name="status" value="<%= @attendance.status %>">
+      <label for="date">Date:</label>
+      <input type="text" id="date" name="date" value="<%= @attendance.date %>">
+     
+      <button type="submit">Save Changes</button>
+    </form>

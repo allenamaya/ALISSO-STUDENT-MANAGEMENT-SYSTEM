@@ -1,0 +1,9 @@
+<% erb :'layout', layout: true do %>
+    
+    <h1>All Teachers</h1>
+
+<ul>
+  <% @teachers.each do |teacher| %>
+    <li><%= teacher.name %></li>
+  <% end %>
+</ul>

@@ -1,0 +1,28 @@
+<% erb :'layout', layout: true do %>
+  <h1>Edit Grade</h1>
+
+    <form action="/grades/<%= @grade.id %>" method="post">
+      <input type="hidden" name="_method" value="put">
+      
+      <label for="score">Score:</label>
+      <input type="text" id="score" name="score" value="<%= @grade.score %>">
+      
+      <label for="grade">Grade:</label>
+      <input type="text" id="grade" name="grade" value="<%= @grade.grade %>">
+      
+      <label for="assignment">Assignment:</label>
+      <select id="assignment" name="assignment">
+        <% @assignments.each do |assignment| %>
+          <option value="<%= assignment.id %>" <%= 'selected' if assignment.id == @grade.assignment.id %>><%= assignment.title %></option>
+        <% end %>
+      </select>
+      
+      <label for="student">Student:</label>
+      <select id="student" name="student">
+        <% @students.each do |student| %>
+          <option value="<%= student.id %>" <%= 'selected' if student.id == @grade.student.id %>><%= student.name %></option>
+        <% end %>
+      </select>
+      
+      <button type="submit">Save Changes</button>
+    </form>

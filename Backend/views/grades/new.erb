@@ -1,0 +1,28 @@
+<% erb :'layout', layout: true do %>
+  <h1>New Grade</h1>
+
+<form action="/grades" method="post">
+  <label for="score">Score:</label>
+  <input type="text" id="score" name="score">
+  <label for="grade">Grade:</label>
+  <input type="text" id="grade" name="grade">
+  <label for="assignment_id">Assignment:</label>
+  <select id="assignment_id" name="assignment_id">
+    <% @assignments.each do |assignment| %>
+      <option value="<%= assignment.id %>"><%= assignment.title %></option>
+    <% end %>
+  </select>
+  <label for="student_id">Student:</label>
+  <select id="student_id" name="student_id">
+    <% @students.each do |student| %>
+      <option value="<%= student.id %>"><%= student.name %></option>
+    <% end %>
+  </select>
+  <label for="submitted_at">Submitted At:</label>
+  <input type="text" id="submitted_at" name="submitted_at">
+  <label for="comments">Comments:</label>
+  <textarea id="comments" name="comments"></textarea>
+  <button type="submit">Create Grade</button>
+</form>
+
+    

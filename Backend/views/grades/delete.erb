@@ -1,0 +1,14 @@
+<% erb :'layout', layout: true do %>
+    <h1>Delete Assignment</h1>
+
+    <p>Are you sure you want to delete the assignment?</p>
+    
+    <p>Title: <%= @assignment.title %></p>
+    <p>Description: <%= @assignment.description %></p>
+    <p>Due Date: <%= @assignment.due_date %></p>
+    
+    <form action="/assignments/<%= @assignment.id %>" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <button type="submit">Delete</button>
+    </form>
+    

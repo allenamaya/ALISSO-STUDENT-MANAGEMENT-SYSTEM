@@ -1,0 +1,12 @@
+<% erb :'layout', layout: true do %>
+  
+<!-- views/students/delete.erb -->
+
+<h1>Delete Student</h1>
+
+<p>Are you sure you want to delete <%= @student.name %>? This action cannot be undone.</p>
+
+<form action="/students/<%= @student.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete Student">
+</form>

@@ -1,0 +1,10 @@
+<% erb :'layout', layout: true do %>
+  <h1>Attendance Details</h1>
+
+  <p>Status: <%= @attendance.status %></p>
+  <p>Date: <%= @attendance.date %></p>
+  <p>Time: <%= @attendance.time %></p>
+  <p>Classroom: <%= @attendance.classroom.name %></p>
+  <p>Teacher: <%= @attendance.teacher.name %></p>
+  <p>Notes: <%= @attendance.notes %></p>
+  
