@@ -1,0 +1,15 @@
+<% erb :'layout', layout: true do %>
+    <h1>Classroom Details</h1>
+
+    <p>Name: <%= @classroom.name %></p>
+    <p>Grade Level: <%= @classroom.grade_level %></p>
+    <p>Teacher: <%= @classroom.teacher.name %></p>
+    <p>Students:</p>
+    <ul>
+      <% @classroom.students.each do |student| %>
+        <li><%= student.name %></li>
+      <% end %>
+    </ul>
+    
+    
+

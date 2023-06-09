@@ -1,0 +1,16 @@
+<% erb :'layout', layout: true do %>
+    <h1>Edit Classroom</h1>
+
+<form action="/classrooms/<%= @classroom.id %>" method="POST">
+  <input type="hidden" name="_method" value="PUT">
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" value="<%= @classroom.name %>">
+
+  <label for="grade_level">Grade Level:</label>
+  <input type="text" id="grade_level" name="grade_level" value="<%= @classroom.grade_level %>">
+
+  <!-- Add more input fields for other classroom details -->
+
+  <button type="submit">Save</button>
+</form>

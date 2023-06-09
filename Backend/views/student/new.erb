@@ -1,0 +1,17 @@
+<% erb :'layout', layout: true do %>
+<!-- views/students/new.erb -->
+
+<h1>New Student</h1>
+
+<form action="/students" method="post">
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name">
+
+  <label for="grade">Grade:</label>
+  <input type="text" name="grade" id="grade">
+
+  <label for="attendance">Attendance:</label>
+  <input type="text" name="attendance" id="attendance">
+
+  <input type="submit" value="Create Student">
+</form>

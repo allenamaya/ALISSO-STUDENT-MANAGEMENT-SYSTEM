@@ -1,0 +1,19 @@
+<% erb :'layout', layout: true do %>
+<!-- views/students/edit.erb -->
+
+<h1>Edit Student</h1>
+
+<form action="/students/<%= @student.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name" value="<%= @student.name %>">
+
+  <label for="grade">Grade:</label>
+  <input type="text" name="grade" id="grade" value="<%= @student.grade %>">
+
+  <label for="attendance">Attendance:</label>
+  <input type="text" name="attendance" id="attendance" value="<%= @student.attendance %>">
+
+  <input type="submit" value="Update Student">
+</form>

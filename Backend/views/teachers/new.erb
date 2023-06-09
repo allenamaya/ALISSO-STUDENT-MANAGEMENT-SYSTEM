@@ -1,0 +1,11 @@
+<% erb :'layout', layout: true do %>
+    <h1>New Teacher</h1>
+
+<form action="/teachers" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  <!-- Add more input fields for creating a new teacher -->
+  <button type="submit">Create Teacher</button>
+</form>

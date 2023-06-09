@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alisso - Student Management System</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Alisso - Student Management System</h1>
+    <nav>
+      <ul>
+        <li><a href="/students">Students</a></li>
+        <li><a href="/teachers">Teachers</a></li>
+        <li><a href="/grades">Grades</a></li>
+        <li><a href="/attendances">Attendances</a></li>
+        <li><a href="/classroom">Attendances</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <%= yield %>
+  </main>
+
+  <footer>
+    &copy; <%= Time.now.year %> Alisso - Student Management System
+  </footer>
+</body>
+</html>

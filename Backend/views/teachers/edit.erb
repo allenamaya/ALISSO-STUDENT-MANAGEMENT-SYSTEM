@@ -1,0 +1,13 @@
+<% erb :'layout', layout: true do %>
+    <h1>Edit Teacher</h1>
+
+    <form action="/teachers/<%= @teacher.id %>" method="post">
+      <input type="hidden" name="_method" value="put">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="<%= @teacher.name %>">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" value="<%= @teacher.email %>">
+      <!-- Add more input fields for editing teacher details -->
+      <button type="submit">Save Changes</button>
+    </form>
+    
