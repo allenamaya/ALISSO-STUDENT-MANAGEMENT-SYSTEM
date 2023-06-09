@@ -1,0 +1,23 @@
+/* CSS code for the classroom list component */
+.classroom-list {
+    /* Add your styles here */
+  }
+  
+  .classroom-list-header {
+    background-color: yellow;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  
+  .classroom-list-footer {
+    background-color: yellow;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  

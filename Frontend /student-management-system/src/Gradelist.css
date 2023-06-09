@@ -1,0 +1,23 @@
+/* CSS code for the grade list component */
+.grade-list {
+    /* Add your styles here */
+  }
+  
+  .grade-list-header {
+    background-color: yellow;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  
+  .grade-list-footer {
+    background-color: yellow;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  
