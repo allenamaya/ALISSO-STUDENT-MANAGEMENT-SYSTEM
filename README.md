@@ -1,5 +1,8 @@
 # Alisso - Student Management System
 
+![Group 4](https://github.com/allenamaya/ALISSO-STUDENT-MANAGEMENT-SYSTEM/assets/126647363/65171fab-de27-4ff7-a12a-cccac02703b9)
+
+
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 > A web-based student management system for managing student records, grades, assignments, and attendance.
