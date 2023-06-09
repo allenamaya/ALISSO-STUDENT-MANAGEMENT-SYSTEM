@@ -5,4 +5,5 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'activerecord'
 gem 'sqlite3'
+gem 'sinatra-activerecord'
 # gem "rails"

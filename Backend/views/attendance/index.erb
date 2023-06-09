@@ -1,0 +1,8 @@
+<% erb :'layout', layout: true do %>
+  <h1>All Attendances</h1>
+
+  <ul>
+    <% @attendances.each do |attendance| %>
+      <li><%= attendance.status %></li>
+    <% end %>
+  </ul>

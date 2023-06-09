@@ -1,0 +1,15 @@
+<% erb :'layout', layout: true do %>
+  
+    <h1>Delete Attendance</h1>
+
+    <p>Are you sure you want to delete the attendance?</p>
+    
+    <p>Status: <%= @attendance.status %></p>
+    <p>Date: <%= @attendance.date %></p>
+    <!-- Add more attendance details as needed -->
+    
+    <form action="/attendances/<%= @attendance.id %>" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <button type="submit">Delete</button>
+    </form>
+    

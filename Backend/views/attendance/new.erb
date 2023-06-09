@@ -1,0 +1,20 @@
+<% erb :'layout', layout: true do %>
+  <h1>New Attendance</h1>
+
+  <form action="/attendances" method="post">
+    <label for="status">Status:</label>
+    <input type="text" id="status" name="status">
+    <label for="date">Date:</label>
+    <input type="text" id="date" name="date">
+    <label for="time">Time:</label>
+    <input type="text" id="time" name="time">
+    <label for="classroom">Classroom:</label>
+    <input type="text" id="classroom" name="classroom">
+    <label for="teacher">Teacher:</label>
+    <input type="text" id="teacher" name="teacher">
+    <label for="notes">Notes:</label>
+    <textarea id="notes" name="notes"></textarea>
+    <!-- Add more input fields for creating a new attendance -->
+    <button type="submit">Create Attendance</button>
+  </form>
+  
