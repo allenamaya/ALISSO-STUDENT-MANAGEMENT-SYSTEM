@@ -4,6 +4,7 @@ require_relative '../models/student'
 #controllers/students_controller.rb
 
 class StudentsController < Sinatra::Base
+  set :default_content_type, `application/json`
     # Index route - list all students
     get '/students' do
       @students = Student.all

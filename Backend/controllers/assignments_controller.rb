@@ -4,6 +4,7 @@ require_relative '../models/assignment'
 # controllers/assignments_controller.rb
 
 class AssignmentsController < Sinatra::Base
+  set :default_content_type, `application/json`
     # Index route - list all assignments
     get '/assignments' do
       @assignments = Assignment.all

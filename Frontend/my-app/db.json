@@ -1,0 +1,133 @@
+{
+    "students": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "course": "Computer Science",
+        "year": 2,
+        "enrollmentDate": "2022-09-01",
+        "isActive": true,
+        "grades": [
+          {
+            "courseId": 1,
+            "grade": "A"
+          },
+          {
+            "courseId": 2,
+            "grade": "B+"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "janesmith@example.com",
+        "course": "Mathematics",
+        "year": 3,
+        "enrollmentDate": "2021-08-01",
+        "isActive": true,
+        "grades": [
+          {
+            "courseId": 1,
+            "grade": "A-"
+          },
+          {
+            "courseId": 3,
+            "grade": "B"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Bob Johnson",
+        "email": "bobjohnson@example.com",
+        "course": "Physics",
+        "year": 1,
+        "enrollmentDate": "2023-01-15",
+        "isActive": true,
+        "grades": [
+          {
+            "courseId": 3,
+            "grade": "B+"
+          }
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "id": 1,
+        "name": "Computer Science",
+        "code": "CS101",
+        "credits": 3,
+        "lecturerId": 1,
+        "schedule": "MWF 10:00 AM - 11:30 AM"
+      },
+      {
+        "id": 2,
+        "name": "Mathematics",
+        "code": "MA202",
+        "credits": 4,
+        "lecturerId": 2,
+        "schedule": "TTh 1:30 PM - 3:00 PM"
+      },
+      {
+        "id": 3,
+        "name": "Physics",
+        "code": "PH301",
+        "credits": 3,
+        "lecturerId": 3,
+        "schedule": "MWF 2:00 PM - 3:30 PM"
+      }
+    ],
+    "grades": [
+      {
+        "id": 1,
+        "studentId": 1,
+        "courseId": 1,
+        "grade": "A"
+      },
+      {
+        "id": 2,
+        "studentId": 1,
+        "courseId": 2,
+        "grade": "B+"
+      },
+      {
+        "id": 3,
+        "studentId": 2,
+        "courseId": 1,
+        "grade": "A-"
+      },
+      {
+        "id": 4,
+        "studentId": 2,
+        "courseId": 3,
+        "grade": "B"
+      },
+      {
+        "id": 5,
+        "studentId": 3,
+        "courseId": 3,
+        "grade": "B+"
+      }
+    ],
+    "teachers": [
+      {
+        "id": 1,
+        "name": "Dr. Sarah Adams",
+        "email": "sarahadams@example.com"
+      },
+      {
+        "id": 2,
+        "name": "Prof. Michael Johnson",
+        "email": "michaeljohnson@example.com"
+      },
+      {
+        "id": 3,
+        "name": "Dr. Emily Wilson",
+        "email": "emilywilson@example.com"
+      }
+    ]
+  }
+  

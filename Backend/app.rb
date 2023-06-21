@@ -2,9 +2,6 @@ require 'sinatra'
 require 'sinatra/activerecord'
 require 'bcrypt'
 
-# Configuration for SQLite3 database
-set :database, { adapter: 'sqlite3', database: 'student_management.db' }
-
 # Models
 require './models/student'
 require './models/teacher'
@@ -23,7 +20,7 @@ end
 # Routes
 
 # Main route
-get '/' do
+get './' do
   erb :index
 end
 
@@ -62,7 +59,7 @@ post '/teacher/login' do
 end
 
 # Logout
-post '/users/signout' do
+post '/logout' do
   session.clear
   redirect '/'
 end
@@ -107,3 +104,5 @@ end
 not_found do
   erb :'errors/404'
 end
+
+

@@ -1,9 +1,8 @@
-/* CSS code for the student dashboard component */
-.student-dashboard {
+.teacher-dashboard {
     /* Add your styles here */
   }
   
-  .student-dashboard-header {
+  .teacher-dashboard-header {
     background-color: blue;
     color: white;
     padding: 20px;
@@ -12,7 +11,7 @@
     font-family: "Nunito Sans", sans-serif;
   }
   
-  .student-dashboard-footer {
+  .teacher-dashboard-footer {
     background-color: blue;
     color: white;
     padding: 10px;
@@ -20,4 +19,3 @@
     font-size: 14px;
     font-family: "Nunito Sans", sans-serif;
   }
-  
